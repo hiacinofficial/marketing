@@ -211,27 +211,27 @@ document.getElementById("loginModal").innerHTML = `
             <!-- Forgot password form -->
             <div class="form forgot_form">
                 <div class="form-inner">
-                    <h2>Quên mật khẩu</h2>
+                    <h2>Forgot password</h2>
                     <div class="input_box">
-                        <input type="text" id="userNameFG" name="Tên đăng nhập" placeholder="Tên đăng nhập">
+                        <input type="text" id="userNameFG" name="Tên đăng nhập" placeholder="Login name">
                         <i class="fa-regular fa-user user"></i>
                         <span id="error_userNameFG" class="helper-text text-danger"></span>
                         <span id="error_userNameFG_all_leter" class="helper-text text-danger"></span>
                     </div>
                     <div class="input_box">
-                        <input type="email" id="emailFG" name="email" placeholder="Nhập email">
+                        <input type="email" id="emailFG" name="email" placeholder="Enter email">
                         <i class="fa-regular fa-envelope email"></i>
                         <span id="error_emailFG" class="helper-text text-danger"></span>
                     </div>
                     <div class="input_box">
-                        <input type="password" id="passwordFG" placeholder="Mật khẩu mới" name="Mật khẩu" minlength="6" maxlength="32">
+                        <input type="password" id="passwordFG" placeholder="New password" name="Mật khẩu" minlength="6" maxlength="32">
                         <i class="fa fa-lock password"></i>
                         <i class="fa-regular fa-eye-slash pw_hide"></i>
                         <span id="error_passwordFG" class="helper-text text-danger"></span>
                     </div>
                     <div class="input_box">
                         <input type="password" id="confirmPasswordFG" name="Xác nhận mật khẩu"
-                            placeholder="Xác nhận mật khẩu" minlength="6" maxlength="32">
+                            placeholder="Confirm password" minlength="6" maxlength="32">
                         <i class="fa fa-lock password"></i>
                         <i class="fa-regular fa-eye-slash pw_hide"></i>
                         <span id="error_confirmPasswordFG" class="helper-text text-danger"></span>
