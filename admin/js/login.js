@@ -56,7 +56,7 @@ const kiemTraDangNhap = (loginInput, loginError, passwordInput, passwordError) =
       return false;
   }
   if (document.getElementById(passwordInput).value !== "admin") {                
-      document.getElementById(passwordError).innerHTML = "Nhập sai password!!!";
+      document.getElementById(passwordError).innerHTML = "Input wrong password!!!";
       document.getElementById(passwordError).style.display = 'block';
       document.getElementById(passwordError).style.fontSize = "10px";
       document.getElementById(passwordError).style.color = "red";
