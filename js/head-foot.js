@@ -156,7 +156,7 @@ document.getElementById("loginModal").innerHTML = `
                     <button class="buttonSubmit buttonLogin" type="submit" onclick="doSubmit(1)">Log in</button>
 
                     <div class="login_signup">
-                        Bạn chưa có tài khoản? <a href="#" id="signup">Sign up</a>
+                        Don't have an account? <a href="#" id="signup">Sign up</a>
                     </div>
                 </div>
             </div>
