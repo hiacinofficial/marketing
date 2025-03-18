@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/page.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/san-pham.css">
+    <link rel="shortcut icon" href="./img/logo1.jpg" type="image/x-icon">
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/login.css">
+
+</head>
+<body>  
+    <header class="mx-0 py-2"></header>
+    <div class="row text-center nav-bar m-0 sticky-top" id="nav-bar"></div>
+
+    <main class="san-pham">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <fieldset id="thuong-hieu">
+                        <legend>Hiacin</legend>
+                    </fieldset>
+                    
+                    <fieldset id="loai-san-pham">
+                        <legend>Product type</legend>
+                        <div id="listLoaiSP"></div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Filter prices</legend>
+                        <input type="number" name="" id="price-min" min="0" step="1000" value="0" style="width: 100px;" onkeyup="checkKey(this, event);" onchange="checkValue(this)">
+                        -
+                        <input type="number" name="" id="price-max" min="0" step="1000" value="0" style="width: 100px;" onkeyup="checkKey(this, event);" onchange="checkValue(this)">
+                        <br>
+                        <button class="btn btn-success my-2" onclick="locGia()">Lọc</button>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Other</legend>
+                        <div class="input-group mb-3">
+                            <input type="checkbox" id="check-co-hang" class="check" onclick="locCoHang()">
+                            <label for="check-co-hang">View only available products</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-6"></div>
+                        <div class="col-6 text-end">
+                            <label for="so-sp">Product number:</label>
+                            <select name="" id="so-sp" onchange="setPage(1, this.value)">
+                                <option value="9">9</option>
+                                <option value="18">18</option>
+                                <option value="27">27</option>
+                                <option value="36">36</option>
+                            </select>
+
+                            <label for="sap-xep">Arrange:</label>
+                            <select name="" id="sap-xep" onchange="sort(this.selectedIndex)">
+                                <option value="mac-dinh">Default</option>
+                                <option value="tang-dan">Prices gradually increase</option>
+                                <option value="giam-dan">Prices gradually decrease</option>
+                                <option value="a-z">Sort from A-Z</option>
+                                <option value="z-a">Sort from Z-A</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="danh-sach text-center">
+                    </div>
+
+                    <div id="page" class="page text-center pt-3"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <div class="modal modal-xl" id="productModal" tabindex="-1" role="dialog" aria-hidden="true"></div>
+
+    <div class="alert alert-success py-1" role="alert"></div>
+    <div class="alert alert-danger py-1" role="alert"></div>
+    
+    <footer></footer>
+    <div id="loginModal"></div>
+    
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="./admin/js/accounts.js"></script>
+<script src="./js/head-foot.js"></script>
+<script src="./admin/js/products.js"></script>
+<script src="./js/database.js"></script>
+<script src="./js/product.js"></script>
+<script src="./js/cart.js"></script>
+</html>

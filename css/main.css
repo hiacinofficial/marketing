@@ -1,0 +1,99 @@
+body {
+    background-color: var(--bs-light);
+}
+
+.alert {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 20px;
+    z-index: 50;
+}
+.customer-reviews {
+    text-align: center;
+    margin: 50px auto;
+    padding: 60px 20px; /* Tăng padding */
+    background-color: #FDDDE6; /* Hồng nhạt từ ảnh */
+    border-radius: 20px;
+    width: 100vw; /* Trải rộng toàn bộ background */
+    max-width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-title {
+    font-size: 40px; /* Tăng size */
+    font-weight: bold;
+    color: #d10000;
+    text-transform: uppercase;
+    margin-bottom: 40px; /* Cách xa các review hơn */
+    letter-spacing: 1px;
+}
+.review-grid
+ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.review-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 30px; /* Tăng padding */
+    border-radius: 20px;
+    width: 450px; /* Tăng chiều rộng */
+    height: auto;
+    text-align: center;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px; /* Khoảng cách giữa avatar và nội dung */
+}
+
+.customer-avatar {
+    width: 80px; /* Avatar lớn hơn */
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d10000;
+}
+
+.review-text {
+    text-align: left;
+    font-size: 18px; /* Chữ to hơn */
+}
+
+.review-content {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+}
+
+.review-author {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.review-product {
+    width: 140px; /* Ảnh sản phẩm lớn hơn */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect */
+.review-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}

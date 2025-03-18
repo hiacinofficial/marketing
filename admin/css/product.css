@@ -1,0 +1,33 @@
+.search {
+  border: 0;
+  width: 80%;
+  background-color: rgb(243,243,243);
+  padding: 5px 10px;
+  padding-left: 15px;
+  font-style: italic;
+  outline: 1px solid rgb(150,150,150);
+  border-radius: 10px 10px;
+}
+
+.search-button {
+  border-radius: 0 10px 10px 0;
+}
+
+h1 {
+  font-family: "Josefin Sans", 'Times New Roman', Times, serif;
+}
+
+.error {
+  font-size: 13px;
+  color: red;
+  font-weight: bold;
+}
+
+.alert {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+}

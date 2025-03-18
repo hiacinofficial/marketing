@@ -1,0 +1,169 @@
+header {
+    background-color: white;
+}
+
+.container {
+    padding: 0;
+}
+
+img.logo {
+    width: 48%;
+}
+
+.search {
+    border: 0;
+    width: 80%;
+    background-color: rgb(243,243,243);
+    padding: 5px 10px;
+    padding-left: 15px;
+    font-style: italic;
+    outline: none;
+}
+
+.small-button * {
+    transition: 0.15s;
+    display: inline-block;
+}
+
+.input-group {
+    width: 80%;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.text-end.align-items-center *:hover {
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+#form_open {
+    border: none;
+}
+
+#form_open *:hover {
+    transform: none;
+}
+
+.nav-bar {
+    background-color: var(--bs-gray-900);
+}
+
+.main-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main-nav * {
+    margin: 0 20px;
+    transition-duration: 0.15s;
+    font-size: 18px;
+    padding: 11px 0;
+    text-decoration: none;
+    color: white;
+}
+
+.main-nav *:hover {
+    margin: 0;
+    background-color: var(--bs-danger-bg-subtle);
+    color: #212529;
+    font-weight: bold;
+}
+
+.sticky-top {
+    z-index: 20;
+}
+
+.userDetail {
+    position: relative;
+    display: inline-block;
+}
+
+.userDetail:hover {
+    transform: none;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 65%; /* Đẩy dropdown xuống ngay dưới userDetail */
+    background-color: white;
+    border: 1px solid #ddd;
+    min-width: 170px;
+    overflow: visible;
+    z-index: 9999;
+    text-align: right;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 10px 0;
+    border-radius: 6px;
+}
+
+
+
+.userDetail {
+    position: relative; /* Để dropdown hiển thị chính xác */
+}
+
+.userDetail:hover .dropdown-content {
+    display: block; /* Hiển thị khi hover */
+}
+
+.dropdown-content a {
+    color: black; /* Màu chữ mặc định là đen */
+    padding: 8px 16px; /* Giảm padding để tránh mục quá to */
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    transition: 0.2s;
+    background-color: white; /* Đảm bảo nền trắng mặc định */
+}
+
+.dropdown-content a:hover {
+    color: #FF4F81; /* Màu hồng khi hover */
+    background-color: #f8f9fa; /* Màu nền nhẹ khi hover */
+    font-weight: bold;
+}
+
+
+.show {
+    display: block;
+    transition: 0.15s;
+}
+
+footer {
+    background-color: #212529;
+    padding-top: 20px;
+    color: white;
+}
+
+footer h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+}
+
+footer a, footer .highlight {
+    color: white;
+    text-decoration: none;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+footer a:hover, .highlight:hover {
+    font-weight: bold;
+    color: var(--bs-danger-bg-subtle);
+}
+
+.back-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-size: 30px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+    font-weight: bold;
+}

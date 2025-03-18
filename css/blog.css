@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.article * {
+    display : inline-block;
+    
+}
+
+.article{
+    display: flex;
+    /*margin-bottom: 30px;*/
+}
+
+.image-container {
+    width: 36%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.content {
+    margin-top: 10px;
+    width: 56.6666%;
+   /* padding: 10px;*/
+    box-sizing: border-box;
+}
+.content *{
+    display: block;
+}
+
+.modal-body {
+    text-align: left;
+}
+
+/* .btnprev{
+    left: -100px;
+}
+
+.btnnext{
+    right: -100px;
+}   */
+
+.blog-content {
+    text-align: center;
+    font-family:'Dancing Script', sans-serif;
+    background-color: white;
+} 
+
+.blog-content h1{
+    font-size: 80px;
+    color:black;
+}
+
+.blog-content1{
+    background-color: rgb(250, 224, 243);
+    padding: 10px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.content-blog-content1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Căn giữa theo cả trục ngang và dọc */
+    width: 100%; /* Đảm bảo phần nội dung không bị bó hẹp */
+}
+
+.content-blog-content1 {
+    text-align: center; /* Căn giữa nội dung text */
+    display: flex;
+    flex-direction: column; /* Sắp xếp nội dung chữ theo chiều dọc */
+    align-items: center; /* Căn giữa chữ theo chiều ngang */
+}
+
+
+.content-blog-content1 h3{
+    font-size: 40px;
+    font-weight: bold; 
+}
+
+.content-blog-content1 p{
+    padding: 10px;
+    font-size: 25px; 
+}
+
+.blog-content1 img{
+    width: 20%; /* Đặt chiều rộng của container hình ảnh */
+}
+
+#carouselArticle {
+    padding: 0 100px;
+}
+
+.content2 {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content2-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 0;
+}
+
+.content2-img .col img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.content2 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.text{
+    position: absolute;
+    top: auto;
+    color: white;
+    text-align: center;
+    font-family:'Dancing Script', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.text p {
+    text-shadow: 0 0 4px pink;
+}
+
+.text .btn{
+    border: 1px solid white;
+    color: white;
+    font-size: 30px;
+}
+
+.text .btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.text .btn a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.modal-xl{
+    --bs-modal-width: 1500px;
+}
+
+.modal-title{
+    font-size: 50px;
+    font-family:'Dancing Script', sans-serif;
+}
+
+.noiDung{
+    font-family: 'Cormorant Garamond', serif;
+}

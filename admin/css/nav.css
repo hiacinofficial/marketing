@@ -1,0 +1,32 @@
+html, body, main {
+  height: 100%;
+  width: 100%;
+}
+
+.left {
+  padding: 0;
+  flex: 0.16;
+  background-color: #212529;
+  
+}
+
+.nav-list {
+  display: inline-block;
+  background-color: #212529;
+  position: sticky;
+  top: 0;
+}
+
+.left .btn {
+  width: 80%;
+  transition: 0.3s;
+  color: white;
+  border-radius: 0;
+  text-align: left;
+  font-size: 17px;
+  font-family: "Barlow";
+}
+
+.table {
+  cursor: pointer;
+}

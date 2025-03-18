@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/page.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/logo1.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/order.css">
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <header class="mx-0 my-2"></header>
+    <div class="row text-center nav-bar m-0 sticky-top" id="nav-bar"></div>
+
+    <div class="container my-5 text-center" id="order-empty">
+        <h2 class="font-weight-bold" id="order-empty-message"></h2>
+        <img src="https://cdni.iconscout.com/illustration/premium/thumb/empty-cart-4150967-3437888.png" style="width: 50%">
+    </div>
+
+    <div class="container my-5 text-center" id="order-list">        
+        <h2>Order placed</h2>
+        <table class="text-center table table-bordered" style="vertical-align: middle;">
+            <thead style="font-size: 20px; vertical-align: middle">
+                <tr class="table-danger">
+                    <th width="14%">Image</th>
+                    <th width="40%">Product name</th>
+                    <th width="10%">Price</th>
+                    <th width="15%">Set time</th>
+                    <th width="15%">Status</th>
+                    <th width="6%"></th>
+                </tr>
+            </thead>
+            <tbody id="order-body">
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="modal fade" id="cancelModal" tabindex="-1" role="dialog" aria-labelledby="cancelModalLabel" aria-hidden="true"></div>
+
+    <div class="alert alert-success py-1" role="alert"></div>
+    <div class="alert alert-danger py-1" role="alert"></div>
+
+    <footer></footer>
+    <div id="loginModal"></div>
+    function getGia(price) {
+        return `${price.toFixed(2)}$`; // Định dạng giá với 2 số thập phân và thêm ký hiệu $
+    }
+    
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="./admin/js/accounts.js"></script>
+<script src="./js/head-foot.js"></script>
+<script src="./admin/js/products.js"></script>
+<script src="./admin/js/orders.js"></script>
+<script src="./js/database.js"></script>
+<script src="./js/order.js"></script>
+</html>

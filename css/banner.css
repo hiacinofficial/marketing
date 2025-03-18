@@ -1,0 +1,762 @@
+input,
+textarea,
+select,
+button {
+    outline: none;
+}
+input {
+    line-height: normal;
+}
+label,
+button {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+main {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+.banner {
+    max-width: 100%;
+    margin: 25px auto;
+    position: relative;
+}
+.banner:hover .banner-next {
+    display: flex;
+}
+.banner:hover .banner-pre {
+    display: flex;
+}
+.banner-next, .banner-pre {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 100rem;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+    display:none;
+    text-align: center;
+}
+.banner-next {
+    right: 5px;
+}
+.banner-pre {
+    left: 5px;
+}
+
+.banner-item:hover .banner-next {
+    display: flex;
+}
+
+.banner-next:hover .banner-pre:hover {
+    background-color: #ff99ff;
+    transition: all 0.5s ease;
+}
+
+.banner-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    z-index: 10;
+}
+
+.banner-dots li {
+    margin: 0 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100rem;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.25s linear;
+}
+
+.banner-dots li.active {
+    background-color: black;
+}
+
+.banner-wrapper {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-main {
+    display: flex;
+    position: relative;
+    transition: transform 0.5s linear;
+    height: 100%;
+}
+
+.banner-item {
+    height: 100%;
+    width: 100%;
+    flex: 1 0 100%;
+    user-select: none;
+}
+
+.banner-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.right-icon:before {
+    content: '';
+    width: 3px;
+    position: absolute;
+    transform: rotate(52deg);
+    top: 22px;
+    height: 12px;
+    display: block;
+    background-color: black;
+}
+
+.right-icon:after {
+    content: '';
+    width: 3px;
+    position: absolute;
+    transform: rotate(-230deg);
+    top: 16px;
+    height: 12px;
+    display: block;
+    background-color: black;
+}
+
+.left-icon:before {
+    content: '';
+    width: 3px;
+    position: absolute;
+    transform: rotate(-52deg);
+    top: 22px;
+    height: 12px;
+    display: block;
+    background-color: black;
+}
+
+.left-icon:after {
+    content: '';
+    width: 3px;
+    position: absolute;
+    transform: rotate(230deg);
+    top: 16px;
+    height: 12px;
+    display: block;
+    background-color: black;
+}
+
+@media only screen and (max-width: 1600px) {
+    .banner-wrapper {
+        height: 600px;
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+
+.dmsp_wraper {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2px;
+  /* height: 415px; */
+}
+
+.dmsp-left {
+  flex: 0.97;
+  height: 415px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.dmsp-left-img {
+  width: 100%;
+  height: 100%;
+  transition: all .5s ease;
+}
+
+.dmsp-left-img:hover {
+  transform: scale(1.3);
+}
+
+.dmsp-right {
+  flex: 1;
+  display: flex;
+  height: 100%;
+  height: 415px;
+}
+
+.dmsp-right-left {
+  flex: 1;
+  margin: 0 20px 0 0;
+  overflow: hidden;
+}
+
+.dmsp-right-left-img {
+  height: 100%;
+  transition: all .5s ease;
+}
+
+.dmsp-right-left-img:hover {
+  transform: scale(1.3);
+}
+
+.dmsp-right-right {
+  flex: 1;
+  overflow: hidden;
+}
+
+.dmsp-right-right-top-img {
+  width: 100%;
+  height: 100%;
+  transition: all .5s ease;
+}
+
+.dmsp-right-right-top-img:hover {
+  transform: scale(1.3);
+}
+
+/* danh muc thuong hieu */
+.dmth-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.title-brand h3{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-left: 2rem 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #333;
+  padding: 1rem;
+  background: rgba(255, 51, 153, .05);
+}
+
+
+
+.dmth-grid-wrap {
+  display: grid;
+  /* grid-template-columns: auto auto auto; */
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.hmtd-item {
+ margin: 10px;
+ border-radius: 20px;
+}
+
+.dmth-item-img {
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+.quynh-contrainer {
+  height: 900px;
+}
+
+.quynh_bgr {
+  position: relative;input,
+  textarea,
+  select,
+  button {
+      outline: none;
+  }
+  input {
+      line-height: normal;
+  }
+  label,
+  button {
+      cursor: pointer;
+  }
+  a {
+      text-decoration: none;
+  }
+  img {
+      display: block;
+      max-width: 100%;
+  }
+  main {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      line-height: 1;
+  }
+  .banner {
+      max-width: 100%;
+      margin: 25px auto;
+      position: relative;
+  }
+  .banner:hover .banner-next {
+      display: flex;
+  }
+  .banner:hover .banner-pre {
+      display: flex;
+  }
+  .banner-next, .banner-pre {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: 50px;
+      border-radius: 100rem;
+      justify-content: center;
+      align-items: center;
+      color: #999;
+      background-color: white;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10;
+      display:none;
+      text-align: center;
+  }
+  .banner-next {
+      right: 5px;
+  }
+  .banner-pre {
+      left: 5px;
+  }
+  
+  .banner-item:hover .banner-next {
+      display: flex;
+  }
+  
+  .banner-next:hover .banner-pre:hover {
+      background-color: #ff99ff;
+      transition: all 0.5s ease;
+  }
+  
+  .banner-dots {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      z-index: 10;
+  }
+  
+  .banner-dots li {
+      margin: 0 10px;
+      width: 15px;
+      height: 15px;
+      border-radius: 100rem;
+      background-color: white;
+      cursor: pointer;
+      transition: background-color 0.25s linear;
+  }
+  
+  .banner-dots li.active {
+      background-color: black;
+  }
+  
+  .banner-wrapper {
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+      position: relative;
+  }
+  
+  .banner-main {
+      display: flex;
+      position: relative;
+      transition: transform 0.5s linear;
+      height: 100%;
+  }
+  
+  .banner-item {
+      height: 100%;
+      width: 100%;
+      flex: 1 0 100%;
+      user-select: none;
+  }
+  
+  .banner-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+  
+  .right-icon:before {
+      content: '';
+      width: 3px;
+      position: absolute;
+      transform: rotate(52deg);
+      top: 22px;
+      height: 12px;
+      display: block;
+      background-color: black;
+  }
+  
+  .right-icon:after {
+      content: '';
+      width: 3px;
+      position: absolute;
+      transform: rotate(-230deg);
+      top: 16px;
+      height: 12px;
+      display: block;
+      background-color: black;
+  }
+  
+  .left-icon:before {
+      content: '';
+      width: 3px;
+      position: absolute;
+      transform: rotate(-52deg);
+      top: 22px;
+      height: 12px;
+      display: block;
+      background-color: black;
+  }
+  
+  .left-icon:after {
+      content: '';
+      width: 3px;
+      position: absolute;
+      transform: rotate(230deg);
+      top: 16px;
+      height: 12px;
+      display: block;
+      background-color: black;
+  }
+  
+  @media only screen and (max-width: 1600px) {
+      .banner-wrapper {
+          height: 600px;
+      }
+  }
+  
+  @import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+  
+  .dmsp_wraper {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2px;
+    /* height: 415px; */
+  }
+  
+  .dmsp-left {
+    flex: 0.97;
+    height: 415px;
+    margin-right: 20px;
+    overflow: hidden;
+  }
+  
+  .dmsp-left-img {
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease;
+  }
+  
+  .dmsp-left-img:hover {
+    transform: scale(1.3);
+  }
+  
+  .dmsp-right {
+    flex: 1;
+    display: flex;
+    height: 100%;
+    height: 415px;
+  }
+  
+  .dmsp-right-left {
+    flex: 1;
+    margin: 0 20px 0 0;
+    overflow: hidden;
+  }
+  
+  .dmsp-right-left-img {
+    height: 100%;
+    transition: all .5s ease;
+  }
+  
+  .dmsp-right-left-img:hover {
+    transform: scale(1.3);
+  }
+  
+  .dmsp-right-right {
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .dmsp-right-right-top-img {
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease;
+  }
+  
+  .dmsp-right-right-top-img:hover {
+    transform: scale(1.3);
+  }
+  
+  /* danh muc thuong hieu */
+  .dmth-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .title-brand h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 2rem 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #333;
+    padding: 1rem;
+    background: rgba(255, 51, 153, .05);
+  }
+  
+  
+  
+  .dmth-grid-wrap {
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+  
+  .hmtd-item {
+   margin: 10px;
+   border-radius: 20px;
+  }
+  
+  .dmth-item-img {
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .quynh-contrainer {
+    height: 900px;
+  }
+  
+  .quynh_bgr {
+    position: relative;
+  }
+  
+  .quynh_bgr_img {  
+    width: 100%;
+    height: 600px;
+  }
+  
+  .quynh-title {
+    width: 100%;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif; /* Thêm font chữ */
+    position: absolute;
+    top: 50px;
+    color: #333;
+  }
+  
+  .quynh_img_on {
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    left: 300px;
+    bottom: -200px;
+  }
+  
+  .quynh_img_on-img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .quynh_content {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%, -17%);
+    width: 675px;
+    padding: 45px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.7); /* Màu trắng nhưng trong suốt 70% */
+    border: 2px solid rgba(255, 255, 255, 0.9); /* Viền trắng gần như trong suốt */
+    box-shadow: 0px 7.5px 22.5px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    backdrop-filter: blur(10px); /* Hiệu ứng mờ nền phía sau */
+  }
+  
+  
+  .quynh_content img {
+    width: 270px; /* 180px * 1.5 */
+    height: auto;
+    display: block;
+    margin: 0 auto 22.5px; /* 15px * 1.5 */
+  }
+  
+  .quynh_content h2 {
+    font-size: 36px; /* 24px * 1.5 */
+    font-weight: bold;
+    color: #4c683f;
+    margin-bottom: 22.5px; /* 15px * 1.5 */
+  }
+  
+  .product_price {
+    font-size: 42px; /* 28px * 1.5 */
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .old_price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 33px; /* 22px * 1.5 */
+    margin-left: 15px; /* 10px * 1.5 */
+  }
+  
+  .product_desc {
+    font-size: 27px; /* 18px * 1.5 */
+    color: #555;
+    margin: 22.5px 0; /* 15px * 1.5 */
+  }
+  
+  .discount {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 22px; /* 10px 15px * 1.5 */
+    border-radius: 12px; /* 8px * 1.5 */
+    font-size: 33px; /* 22px * 1.5 */
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 22.5px; /* 15px * 1.5 */
+  }
+  .hot_promo {
+    font-size: 32px; /* Tăng kích thước chữ */
+    font-weight: bold;
+    color: #333; /* Màu tối hơn nhưng không quá nổi bật */
+    text-align: center; /* Căn giữa */
+    margin-bottom: 30px; /* Đẩy dòng chữ xuống xa hơn ảnh */
+    position: relative; /* Giúp điều chỉnh vị trí */
+    top: -20px; /* Dịch lên trên một chút để không dính vào ảnh */
+  }
+  
+}
+
+.quynh_bgr_img {
+  width: 100%;
+  height: 600px;
+}
+
+.quynh-title {
+  width: 100%;
+  font-size: 80px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif; /* Thêm font chữ */
+  position: absolute;
+  top: 50px;
+  color: #333;
+}
+
+.quynh_img_on {
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  left: 300px;
+  bottom: -200px;
+}
+
+.quynh_img_on-img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.quynh_content {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transform: translate(-50%, -17%);
+  width: 675px;
+  padding: 45px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.7); /* Màu trắng nhưng trong suốt 70% */
+  border: 2px solid rgba(255, 255, 255, 0.9); /* Viền trắng gần như trong suốt */
+  box-shadow: 0px 7.5px 22.5px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  backdrop-filter: blur(10px); /* Hiệu ứng mờ nền phía sau */
+}
+
+
+.quynh_content img {
+  width: 270px; /* 180px * 1.5 */
+  height: auto;
+  display: block;
+  margin: 0 auto 22.5px; /* 15px * 1.5 */
+}
+
+.quynh_content h2 {
+  font-size: 36px; /* 24px * 1.5 */
+  font-weight: bold;
+  color: #4c683f;
+  margin-bottom: 22.5px; /* 15px * 1.5 */
+}
+
+.product_price {
+  font-size: 42px; /* 28px * 1.5 */
+  font-weight: bold;
+  color: #333;
+}
+
+.old_price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 33px; /* 22px * 1.5 */
+  margin-left: 15px; /* 10px * 1.5 */
+}
+
+.product_desc {
+  font-size: 27px; /* 18px * 1.5 */
+  color: #555;
+  margin: 22.5px 0; /* 15px * 1.5 */
+}
+
+.discount {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 22px; /* 10px 15px * 1.5 */
+  border-radius: 12px; /* 8px * 1.5 */
+  font-size: 33px; /* 22px * 1.5 */
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 22.5px; /* 15px * 1.5 */
+}
+.hot_promo {
+  font-size: 32px; /* Tăng kích thước chữ */
+  font-weight: bold;
+  color: #333; /* Màu tối hơn nhưng không quá nổi bật */
+  text-align: center; /* Căn giữa */
+  margin-bottom: 30px; /* Đẩy dòng chữ xuống xa hơn ảnh */
+  position: relative; /* Giúp điều chỉnh vị trí */
+  top: -20px; /* Dịch lên trên một chút để không dính vào ảnh */
+}

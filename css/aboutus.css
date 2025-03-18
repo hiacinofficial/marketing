@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.page-header {
+    height: 20rem;
+    width: 100%;
+    padding:50px;
+    text-align: center;
+    background-image: url("../img/aboutus/06.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.9;
+}
+
+.page-header {
+    position: relative; /* Đảm bảo phần header là vị trí tham chiếu */
+}
+.page-header h1 {
+    font-weight: bold;
+    font-size: 140px; /* Giữ nguyên kích thước */
+    display: inline;
+    color: #FFFBF2; /* Màu be */
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+    top: -20px; /* Đẩy chữ lên trên */
+}
+
+
+/* /////////////////////////////phần nội dung /////////////////////////// */
+
+/* /////////////////////////////Part 1 - Chia 1 hàng và 2 cột/////////////////// */
+#part-1{
+    margin-top: 20px;
+    background-color: white;
+    width: 100%;
+    height: 45rem;
+    
+}
+
+/* ////////////////////////////Cột 1/////////////////////////// */
+#col-1{
+    padding: 35px;
+    width: 50%;
+    height: 45rem;
+    float: left;
+    border-radius: 20px 20px;
+    
+}
+
+
+
+#img1{
+    
+   
+    width: 37rem;
+	height: 30rem;
+    
+    
+}
+#img2,#img3,#img4
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    width:  180px;
+	height: 180px;
+    
+}
+
+/* ///////////////////////////Cột 2////////////////////////////////// */
+#col-2{
+    background-color: white;
+    width: 50%;
+    height: 45rem;
+    float: right;
+    padding: 1rem;
+    
+}
+#col-2 h1 {
+    background-color: #FFFBF2;
+}
+.inner-text 
+{   
+    background-color: white;
+    height: 50%;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 20px;
+    font-size: 20px;
+    
+ 
+}
+.inner-text h1{
+    background-color: lightpink;
+    text-align: center;
+    padding: 20px;
+   font-size: 40px;
+    border-radius: 40px 40px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+
+.inner-list h1{
+    background-color: lightpink;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    border-radius: 40px 40px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.inner-list {
+    margin-top: 10px;
+    height: 50%;
+    padding: 5px;
+    background-color: white;
+    
+}
+
+.inner-list ul p{
+   margin-top: 5px;
+    float: left;
+    font-size: 20px;
+
+}
+
+.inner-list i{
+    color: rgb(255, 255, 255);
+}
+
+/* /////////////////////////////Part 2/////////////////// */
+.part-2{
+    padding: 20px;
+
+    width: 100%;
+    height: 30rem;
+    display: flex;
+ 
+    justify-content: space-between;
+    background-image: url(../img/aboutus/img5.jpg);
+    background-size: cover;
+    opacity: 0.8;
+    background-color: #FFFBF2 !important;
+    background-image: none !important; /* Xóa ảnh nền nếu có */
+   
+}
+/* ////// nội dung phần slide-1///////////////////// */
+
+
+
+  .container .left1 {
+    text-align: center;
+    background-color: white;
+    font-size: 20px;
+    width: 25%;
+    padding: 20px;
+    margin-left: 10px;
+    border-radius: 40px 40px;
+    box-shadow: 5px 5px 5px gray;
+  }
+
+
+
+  .container .mid1 {
+    font-size: 20px;
+    text-align: center;
+    width: 25%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 40px 40px;
+    box-shadow: 5px 5px 5px gray;
+    
+  }
+
+  .container .right1 {
+    font-size: 20px;
+    text-align: center;
+    width: 25%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 40px 40px;
+    box-shadow: 5px 5px 5px gray;
+  } 
+
+  .container h3{
+    color: black;
+   
+
+  }
+
+  /* /////////////////////////////Part 3 /////////////////// */
+.part-3{
+    padding: 40px;
+    height: 30rem;
+    display: block;
+    background-image: url(../img/blog/aaaa.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    
+}
+.welcome-text {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 48px; /* Tùy chỉnh kích thước */
+    font-weight: 700; /* Đậm hơn */
+}
+
+
+.part-3 h1{
+background-color: #FFFBF2; /* Đổi màu nền sang màu be */
+    width: 50%;
+    padding: 10px;
+    font-size: 40px;
+  text-align: center;
+  border-radius: 40px 40px;
+  box-shadow: 5px 5px 5px gray;
+   
+}
+
+.part-3 p {
+    background-color: white;
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    justify-content: left;
+    border-radius: 40px 40px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+  /* /////////////////////////////Part 4 /////////////////// */
+  .part-4{
+    padding: 10px;
+    background-color: white;
+    height: 30rem;
+    background-image: url(../img/aboutus/img5.jpg);
+    background-size: cover;
+    background-color: #FFFBF2 !important;
+    background-image: none !important; /* Xóa ảnh nền nếu có */
+}
+
+.part-4 .col-3 {
+    border-radius: 40px 40px;
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    display: flex; /* Thêm flexbox */
+    flex-direction: column; /* Thêm nếu cần căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+}
+
+.exclusive-deals {
+    list-style: none;
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px gray;
+    max-width: 400px;
+    align-self: center; /* Căn giữa danh sách trong cột nếu cần */
+    margin-top: 80px; /* Thêm khoảng cách 20px từ phía trên */
+    background-color: rgba(255, 255, 255, 0.5); /* Màu trắng với độ trong suốt 0.8 */
+}
+
+#img5,#img6,#img7,#img8,#img9,#img10
+{
+    
+    padding: 10px;
+    width:  185px;
+	height: 185px;
+    
+}
+
+.brand * {
+    transition: 0.15s;
+}
+
+.brand *:hover
+{
+    
+    cursor: pointer;
+    transform: scale(1.1);
+    
+}
+
+
+.part-4 .col-4 {
+
+ 
+    width: 50%;
+    float: right;
+   padding: 10px;
+   height: 28rem;
+    
+   
+   
+}
+
+.col-4 h1,.col-3 h1{
+    text-align: center;
+    color: black;
+    border-radius: 40px 40px;
+    
+   
+}
+
+.col-4 .container-quotes{
+    text-align: center;
+    padding: 30px;
+    
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 40px 40px;
+
+}
+.col-4 .container-quotes .quotes{
+    font-size: 30px;
+    font-style: italic;
+
+}
+
+.col-4 .container-quotes .author{
+    font-size: 26px;
+   
+
+}
+.exclusive-offer {
+    text-align: center;
+}
+
+.offer-images {
+    display: flex;
+    flex-direction: row; /* Xếp ảnh theo hàng ngang */
+    justify-content: center; /* Căn giữa ảnh */
+    gap: 50px; /* Khoảng cách giữa các ảnh */
+    margin-top: 80px;
+}
+
+.offer-images img {
+    width: 100%; /* Tăng kích thước ảnh lên một chút */
+    max-width: 130px; /* Giới hạn kích thước ảnh */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.offer-images img:hover {
+    transform: scale(1.1);
+}

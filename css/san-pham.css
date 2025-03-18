@@ -1,0 +1,142 @@
+.san-pham {
+    margin: 50px 20px;
+}
+
+.danh-sach {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.chi-tiet {
+    margin: 10px 0;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: -4px 4px 5px rgba(0,0,0,0.3);
+    background-color: white;
+    cursor: pointer;
+    transition-duration: 0.15s;
+    width: 30%;
+}
+
+.chi-tiet:hover {
+    transform: scale(1.03,1.03);
+    box-shadow: none;
+}
+
+.hinh-san-pham img {
+    width: 60%;
+    aspect-ratio: 1/1;
+}
+
+.ten-san-pham {
+    min-height: 70px;
+}
+
+.gia {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF4F81;
+}
+
+fieldset {
+    margin-bottom: 30px;
+}
+
+.check {
+    margin-right: 10px;
+}
+
+legend {
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+.amount, .amount-page, #amount-info {
+    width: 60px;
+    border: 1px solid rgb(200,200,200);
+    text-align: center;
+}
+
+.page .btn {
+    font-size: 20px;
+    aspect-ratio: 1/1;
+}
+
+#productModal .modal-content {
+    box-shadow: -4px 4px 5px rgba(0,0,0,0.3);
+}
+
+button.amount {
+    width: 35px;
+}
+
+button.amount:hover {
+    border: 1px solid rgb(200,200,200);
+}
+
+#listLoaiSP, #listThuongHieu {
+    height: 150px;
+    overflow: auto;
+}
+
+#listLoaiSP div, #listThuongHieu div {
+    height: fit-content;
+}
+#productModal .comments textarea {
+    width: 100%;
+    height: 100px; /* Tăng chiều cao của textarea */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical; /* Cho phép người dùng thay đổi kích thước theo chiều dọc */
+    margin-bottom: 10px;
+}
+
+#productModal .comments .submit-comment {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#productModal .comments .submit-comment:hover {
+    background-color: #0056b3;
+}
+
+#productModal .comment-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#productModal .comment-list li {
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+}
+.image-controls {
+    display: flex;
+    gap: 10px; /* Tạo khoảng cách giữa hai nút */
+    margin-left: 150px; /* Dịch sang trái, thay đổi giá trị này nếu cần */
+    margin-top: 20px; /* Dịch xuống dưới */
+}
+
+.image-controls button {
+    padding: 5px 10px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.image-controls button:hover {
+    background-color: #5a6268;
+}
+#thuong-hieu legend {
+    margin-left: 50px; /* Điều chỉnh khoảng cách sang phải */
+}
+
