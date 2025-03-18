@@ -156,7 +156,7 @@ document.getElementById("loginModal").innerHTML = `
                     <button class="buttonSubmit buttonLogin" type="submit" onclick="doSubmit(1)">Log in</button>
 
                     <div class="login_signup">
-                        Bạn chưa có tài khoản? <a href="#" id="signup">Đăng ký</a>
+                        Bạn chưa có tài khoản? <a href="#" id="signup">Sign up</a>
                     </div>
                 </div>
             </div>
@@ -203,7 +203,7 @@ document.getElementById("loginModal").innerHTML = `
                     <button class="buttonSubmit buttonSignup" onclick="doSubmit(2)">Đăng ký</button>
 
                     <div class="login_signup">
-                        Bạn có tài khoản? <a href="#" id="login">Đăng nhập</a>
+                        Do you have an account? <a href="#" id="login">Đăng nhập</a>
                     </div>
                 </div>
             </div>
