@@ -153,7 +153,7 @@ document.getElementById("loginModal").innerHTML = `
                         <a href="#" class="forgot_pw">Forgot password?</a>
                     </div>
 
-                    <button class="buttonSubmit buttonLogin" type="submit" onclick="doSubmit(1)">Đăng nhập</button>
+                    <button class="buttonSubmit buttonLogin" type="submit" onclick="doSubmit(1)">Log in</button>
 
                     <div class="login_signup">
                         Bạn chưa có tài khoản? <a href="#" id="signup">Đăng ký</a>
@@ -164,26 +164,26 @@ document.getElementById("loginModal").innerHTML = `
             <!-- Signup Form -->
             <div class="form signup_form">
                 <div class="form-inner">
-                    <h2>Đăng ký</h2>
+                    <h2>Forgot password</h2>
                     <div class="input_box">
-                        <input type="text" id="userNameSU" name="Tên đăng nhập" placeholder="Tên đăng nhập">
+                        <input type="text" id="userNameSU" name="Tên đăng nhập" placeholder="Login name">
                         <i class="fa-regular fa-user user"></i>
                         <i class="fa-regular fa-user user"></i>
                         <div id="error_userNameSU" class="error-message"></div>
                     </div>
                     <div class="input_box">
-                        <input type="email" id="emailSU" name="Email" placeholder="Nhập email">
+                        <input type="email" id="emailSU" name="Email" placeholder="Enter email">
                         <i class="fa-regular fa-envelope email"></i>
                         <div id="error_emailSU" class="error-message"></div>
                     </div>
                     <div class="input_box">
-                        <input type="password" id="passwordSU" name="Mật khẩu" placeholder="Mật khẩu" minlength="6" maxlength="32">
+                        <input type="password" id="passwordSU" name="Mật khẩu" placeholder="New password" minlength="6" maxlength="32">
                         <i class="fa fa-lock password"></i>
                         <i class="fa-regular fa-eye-slash pw_hide"></i>
                         <div id="error_passwordSU" class="error-message"></div>
                     </div>
                     <div class="input_box">
-                        <input type="password" id="confirmPasswordSU" placeholder="Xác nhận mật khẩu"
+                        <input type="password" id="confirmPasswordSU" placeholder="Confirm password"
                             name="Xác nhận mật khẩu">
                         <i class="fa fa-lock password"></i>
                         <i class="fa-regular fa-eye-slash pw_hide"></i>
@@ -238,11 +238,11 @@ document.getElementById("loginModal").innerHTML = `
                     </div>
 
                     <div class="forgot_login_signup">
-                        <a href="#" id="signupPW">Tạo tài khoản mới</a>
-                        <a href="#" id="loginPW">Quay lại đăng nhập</a>
+                        <a href="#" id="signupPW">Create a new account    </a>
+                        <a href="#" id="loginPW">Return to login</a>
                     </div>
 
-                    <button class="buttonSubmit buttonForgot" type="submit" onclick="doSubmit(3)">Thay đổi mật khẩu</button>
+                    <button class="buttonSubmit buttonForgot" type="submit" onclick="doSubmit(3)">Change password</button>
 
                 </div>
             </div>
