@@ -200,10 +200,10 @@ document.getElementById("loginModal").innerHTML = `
                         </span>
                     </div>
 
-                    <button class="buttonSubmit buttonSignup" onclick="doSubmit(2)">Đăng ký</button>
+                    <button class="buttonSubmit buttonSignup" onclick="doSubmit(2)">Sign up</button>
 
                     <div class="login_signup">
-                        Do you have an account? <a href="#" id="login">Đăng nhập</a>
+                        Do you have an account? <a href="#" id="login">Log in</a>
                     </div>
                 </div>
             </div>
