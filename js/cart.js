@@ -100,11 +100,11 @@ function applyDiscount() {
         localStorage.setItem("totalPrice", totalPrice);
         localStorage.setItem("discountCode", codeInput);
 
-        discountMessage.innerText = "Mã giảm giá hợp lệ! Đã áp dụng giảm 20%.";
+        discountMessage.innerText = "Valid coupon code! 20% off applied";
         discountMessage.classList.remove("text-danger");
         discountMessage.classList.add("text-success");
     } else {
-        discountMessage.innerText = "Mã giảm giá không hợp lệ!";
+        discountMessage.innerText = "Invalid coupon code!";
         discountMessage.classList.remove("text-success");
         discountMessage.classList.add("text-danger");
     }
