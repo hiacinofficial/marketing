@@ -301,7 +301,7 @@ function addToCart(product, index = undefined) {
     else {
         if(findProduct(product) === -1) {
             insertCart(product, amount.value);
-            successMessage("Thêm thành công sản phẩm");
+            successMessage("Product added successfully");
         }
 
         else {
